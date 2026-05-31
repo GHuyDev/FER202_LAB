@@ -1,0 +1,81 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Màu nền tối tùy chỉnh cho navbar và form */
+.bg-dark-custom {
+  background-color: #1a1a1a !important;
+}
+
+/* Màu nền xám đậm cho thẻ Card thực đơn */
+.bg-secondary-custom {
+  background-color: #2b2b2b !important;
+}
+
+/* Chiều cao của ảnh Carousel banner */
+.hero-img {
+  height: 550px;
+  object-fit: cover;
+}
+
+/* Nền mờ cho chữ đè lên slide Carousel */
+.bg-caption-custom {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 1.5rem;
+  border-radius: 4px;
+  bottom: 20%;
+}
+
+/* Định dạng riêng cho nút "Send Message" */
+.btn-send-custom {
+  background-color: #ffc107 !important;
+  border-color: #ffc107 !important;
+  color: #000 !important;
+  transition: background-color 0.2s ease;
+}
+
+.btn-send-custom:hover {
+  background-color: #e0a800 !important;
+  border-color: #e0a800 !important;
+}
+
+/* Badge SALE và NEW */
+.fs-7 {
+  font-size: 0.75rem;
+}
