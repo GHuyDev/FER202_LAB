@@ -8,7 +8,6 @@ class QuizApp extends Component {
         super(props);
 
         this.state = {
-            // questions: 1 mảng chứa 2-3 ques dạng object
             questions: [
                 {
                     id: 1,
@@ -40,7 +39,6 @@ class QuizApp extends Component {
         };
     }
 
-    //hàm xử lý khi user bấm chọn 1ans
     handleSelectAns = (option) => {
         if (!this.state.showFeedback) {
             this.setState({
@@ -49,7 +47,6 @@ class QuizApp extends Component {
         }
     };
 
-    // Hàm xử lý khi người dùng bấm nút Submit Answer
     handleSubmitAns = () => {
         const { questions, currentQues, selectAns, score } = this.state;
         if (selectAns === "") return;
@@ -70,7 +67,7 @@ class QuizApp extends Component {
         if (currentQues < questions.length - 1) {
             this.setState({
                 currentQues: currentQues + 1,
-                selectAns: "", //reset đáp án
+                selectAns: "",
                 showFeedback: false //reset trạng thái feedback ques mới
             });
         } else {

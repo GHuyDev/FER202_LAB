@@ -5,7 +5,6 @@ class Score extends Component {
         const { score, totalQues, onRestart } = this.props;
         const percentage = Math.round((score / totalQues) * 100);
 
-        // Logic xếp loại dựa trên điểm số
         let message = "";
         if (percentage === 100) {
             message = "Perfect Score! You are a genius!";
@@ -29,7 +28,7 @@ class Score extends Component {
                     <p className="percentage-text">{percentage}% Correct</p>
                     <p className="feedback-message">{message}</p>
                 </div>
-                {/* Nút bấm để gọi hàm reset state chơi lại ở QuizApp */}
+                {/* Nút bấm để gọi hàm reset state */}
                 <button className="restart-btn" onClick={onRestart}>
                     Play Again
                 </button>

@@ -18,7 +18,7 @@ class Person {
 }
 
 // Khởi tạo một đối tượng cụ thể từ lớp Person
-const person = new Person("John", 25);
+const person = new Person("HuyNG", 21);
 
 // Gọi phương thức sayHello để in kết quả ra màn hình Console
 person.sayHello();

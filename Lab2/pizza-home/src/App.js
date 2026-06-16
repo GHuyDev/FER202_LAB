@@ -91,6 +91,7 @@ function App() {
           <span className="visually-hidden">Next</span>
         </button>
       </div>
+
       {/* 3. Our Menu Section */}
       <div className="container my-5">
         <h2 className="mb-4 text-white">Our Menu</h2>
@@ -166,6 +167,7 @@ function App() {
           </div>
         </div>
       </div>
+
       {/* 4. Book Your Table Form Section */}
       <div className="bg-dark-custom py-5">
         <div className="container">

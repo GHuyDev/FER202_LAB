@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 class Question extends Component {
     render() {
         // Nhận dữ liệu và các hàm callback từ Component cha (QuizApp)
