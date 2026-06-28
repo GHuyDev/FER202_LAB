@@ -15,7 +15,6 @@ export const QuizPlayer = () => {
 
     const currentQuestion = questions[currentQuestionIndex];
 
-    // Tác vụ phụ (Side Effect): Reset đáp án đã chọn khi chuyển câu hỏi
     useEffect(() => {
         setSelectedAnswer('');
     }, [currentQuestionIndex]);

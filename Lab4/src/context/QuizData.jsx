@@ -1,11 +1,11 @@
 import React, { createContext, useState } from 'react';
 
-// Tạo Context
 export const QuizData = createContext();
 
 // Dữ liệu ban đầu
 export const quizData = [
     {
+        id: 1,
         question: 'What is ReactJS?',
         answers: [
             'A JavaScript library for building user interfaces',
@@ -15,6 +15,7 @@ export const quizData = [
         correctAnswer: 'A JavaScript library for building user interfaces'
     },
     {
+        id: 2,
         question: 'What is JSX?',
         answers: [
             'A programming language',
@@ -34,10 +35,9 @@ export const QuizProvider = ({ children }) => {
 
     // Thêm câu hỏi động từ form nhập liệu
     const addQuestion = (newQuestion) => {
-        setQuestions([...questions, newQuestion]);
+        setQuestions([...questions, newQuestion]);  //spread operator
     };
 
-    // Reset để chơi lại
     const restartQuiz = () => {
         setCurrentQuestionIndex(0);
         setSelectedAnswer('');

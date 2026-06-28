@@ -18,6 +18,7 @@ export const QuestionForm = () => {
         }
 
         addQuestion({
+            id: Date.now(),
             question: questionText,
             answers: [optionA, optionB, optionC],
             correctAnswer: correctAnswer
